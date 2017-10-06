@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<head>
+  <!-- add stylesheets here-->
+  <link href="basestyle.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <title id="title">New York City Leading Causes of Death</title>
+</head>
+
+<body style="background-color: #e1e8f2">
+
+<!-- add js libraries here-->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script-->
+<script src="js/lib/jquery-3.1.1.min.js"></script>
+<script src="js/lib/jquery-ui.min.js"></script>
+<script src="js/lib/bootstrap.js"></script>
+
+
+<!-- add divs here-->
+<br>
+
+<h2 id = "title">New York City Leading Causes of Death, 2007-2014</h2>
+
+<div>
+<div class = "stackedBar" id = "stackedBarDeath"></div>
+
+<div class="controls" id="controls">
+  <h2 id="controlTitle">Search Options</h2>
+    <p>What would you like search by?</p>
+    <form action="">
+        <input type="radio" name="mode" id="modeDefault" value="byCause"checked> Cause (Click on the legend)<br>
+        <input type="radio" name="mode" value="byYear" > Year (Select a bar)
+    </form>
+
+    <p>How would you like to view the data?</p>
+    <form action="">
+        <input type="radio" onclick = "changeMode('totalDeaths')" name="dataMode" id = "totalDeaths" value="totalDeaths" checked>Total Number of Deaths<br>
+        <input type="radio" onclick = "changeMode('deathRate')" name="dataMode" id = "deathRate" value="deathRate"> Death Rate
+    </form>
+    <div id="totaldeathButton"></div>
+
+    <div id="deathrateButton"></div>
+
+    <p>Would you like to sort the data?</p>
+    <div id="SortAZ"></div>
+    <div>
+    <p>Would you like to clear the highlights?</p>
+    <button onclick = "resetAllHighlight()">Reset Highlight</button>
+  </div>
+    <p>Reset to default settings</p>
+    <div id="resetButton"></div>
+
+    <!--Year  <input type="text" id="barChartYear" value="2014">-->
+    <!--&lt;!&ndash;<input type="submit" value="Go">&ndash;&gt;-->
+    <!--<button onclick="updateBarChart()">Go!</button>-->
+
+</div>
+</div>
+
+
+
+<div class = "byYearDiv" id = "byYearCharts">
+
+
+<!-- <h2 class = "yearSexHeader" style="padding-left:60px;">By Year and Sex</h2>
+<h2 class = "yearRaceHeader" style="padding-left:60px;">By Year and Race</h2> -->
+
+<div class = "yearSexMultiple" id = "yearSexMultipleID"> </div>
+
+
+<div class = "yearRaceMultiple" id = "yearRaceMultipleID"></div>
+
+<div class = "causeSmallMultiple" id = "cause2014">
+
+
+
+<div class = "sexBarChart" id = "sexBarChart">
+
+
+</div>
+
+<div class = "yearRace" id = "yearRace"></div>
+</div>
+<div class = "selections">
+  <div class = "results" id= "recordVal">
+    <h3> Recorded Values</h2>
+    <input type="button" name="clearRecords" value="Clear Records">
+  </div>
+</div>
+<br>
+
+<div class = "tooltip" id = "tooltipID"></div>
+<!-- add your script files here-->
+<!--<script src = "http://d3js.org/d3.v4.min.js"></script>-->
+<script src="js/sexbarchart.js"></script>
+<!--<script src="js/scatter.js"></script>-->
+<script src="js/stacked.js"></script>
+<script src="js/yearRace.js"></script>
+ <script src="js/byYearAndSex-SmallMultiple.js"></script>
+<script src="js/byYearAndRace-SmallMultiple.js"></script>
+
+</div>
+
+</body>
+</html>

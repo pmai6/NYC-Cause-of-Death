@@ -1,0 +1,298 @@
+.bar{
+  fill: steelblue;
+  opacity: 1;
+}
+
+.selected {
+}
+
+.dot.brushed {
+  stroke: orange !important;
+}
+.legend, .label, label {
+    font: 12px sans-serif;
+}
+
+.legend{
+
+}
+.legend rect {
+    max-width: 20%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.legend:hover rect {
+    -moz-transform: scale(1.005);
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
+}
+.axis {
+    font: 9px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+body {
+    font: 10px sans-serif;
+    /*color: #121401;*/
+    margin: auto;
+    width: 1600px;
+    background-color: #e1e8f2;
+
+}
+
+#title{
+  background-color: #e1e8f2;
+}
+
+#controls{
+  border: thin solid black;
+  width: 270px;
+  margin: 10px;
+  padding: 10px;
+  margin-right: 120px;
+  float: right;
+  float: top;
+  background: #d6dbe7;
+
+}
+
+#title{
+  padding-left: 20px;
+  margin-left: 300px;
+  float: top;
+  width: 700px;
+  text-align: center;
+  /*border: 1px solid black;*/
+  background: #e1e8f2;
+}
+
+.results{
+  border: thin solid black;
+  width: 270px;
+  height: 170px;
+  margin: 10px;
+  padding: 10px;
+  margin-right: 0px;
+  float: left;
+  /*float: top;*/
+  text-align: center;
+  background: #d6dbe7;
+  border-radius: 15px;
+
+}
+
+.controls{
+  background: #d6dbe7;
+}
+
+.stackedBar{
+    padding-left: 25px;
+    width: 950;
+    height: 60%;
+    float: left;
+    margin-right: 0px;
+    padding-right: 0px;
+    background-color: #e1e8f2;
+    /*padding-left: 100px;*/
+    /*background: red;*/
+}
+
+.series{
+
+}
+.series rect {
+    max-width: 100%;
+
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.series:hover rect {
+    -moz-transform: scale(1.005);
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
+}
+
+.yearRaceMultiple {
+    float: left;
+    padding-right: 0px;
+    width: 40%;
+    height: 70%;
+    background-color: #e1e8f2;
+}
+
+.yearSexMultiple {
+    padding-right: 700px;
+    float: left;
+    width: 40%;
+    height: 70%;
+    background-color: #e1e8f2;
+}
+
+.line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 5px;
+    width: 100%;
+
+
+}
+.line path {
+    max-width: 10%;
+
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.series:hover path {
+    -moz-transform: scale(1.005);
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
+
+}
+
+.area {
+    fill: steelblue;
+    opacity: .3;
+    width: 100%;
+
+
+}
+
+
+.femalearea {
+    fill: red;
+    opacity: .2;
+    width: 100%;
+
+
+}
+
+.maleline {
+    fill: none;
+    stroke: #666;
+    stroke-width: 5px;
+    width: 100%;
+
+}
+
+.femaleline {
+
+    fill: none;
+    stroke: #666;
+    stroke-width: 5px;
+    width: 100%;
+
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #121401;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+    width: 100%;
+
+}
+
+.yearRace{
+  padding-right: 700px;
+  float: left;
+  width: 50%;
+  height: 70%;
+  background-color: #e1e8f2;
+}
+
+.sexBarChart{
+  float: left;
+  padding-left: 25px;
+  padding-right: 0px;
+  width: 50%;
+  height: 70%;
+  background-color: #e1e8f2;
+}
+
+.causeSmallMultiple{
+  float:bottom;
+  background-color: #e1e8f2;
+}
+
+.causeSmallMultipleH{
+  float: center;
+  background-color: #e1e8f2;
+}
+
+
+.resetButton {
+    float: left;
+}
+
+.selections{
+  float:bottom;
+  margin: 100px;
+  margin-top:500px;
+  padding: 10px;
+  width: 1000px;
+  height: 1000px;
+  background-color: #e1e8f2;
+}
+
+.tooltip > p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.tooltip {
+  background: #101010;
+  color: #EAEAEA;
+  border-radius: 5px;
+  position: absolute;
+  padding: 8px;
+  pointer-events: none;
+  text-align: left;
+  opacity: .5;
+}
+
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.yearRaceMultiple {
+    float: left;
+    padding-left: 25px;
+    padding-right: 0px;
+    width: 50%;
+    height: 70%;
+    background-color: #e1e8f2;
+}
+
+.yearSexMultiple {
+    padding-right: 700px;
+    float: left;
+    width: 50%;
+    height: 70%;
+    background-color: #e1e8f2;
+}
+.headerS {
+  fill: yellow;
+  opacity: 0.3;
+}
+
